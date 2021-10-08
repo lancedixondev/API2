@@ -8,7 +8,6 @@ function fetchresponse(date){
             return response.json();
         }).then(json => {
             display(json, date)
-            console.log(document.getElementsByClassName('today')[0])
             document.getElementsByClassName("today")[0].innerHTML = json.near_earth_objects[date].length
         })
     
