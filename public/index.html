@@ -4,51 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
 <div class="wrapper">
-    <header>
-        <div class="navbar">
-            <p>nav bar</p>
 
-        </div>
-    </header>
+<div class="landing">
 
-    <div class="main-bitcoin-display">
-        <p>DATA HERE</p>
+  <nav class="navbarimpact">
+    <div class="navbartext">
+      <h2>IMPACT IMMINENT</h2>
     </div>
+  </nav>
 
-    <div class="crypto-display">
-        <div class="ethereum-display">
-            <p>DATA HERE</p>
-        </div>
-        <div class="tether-display">
-            <p>DATA HERE</p>
-        </div>
-        <div class="cardano-display">
-            <p>DATA HERE</p>
-        </div>
-        <div class="binance-coin-display">
-            <p>DATA HERE</p>
-        </div>
-        <div class="xrp-display">
-            <p>DATA HERE</p>
-        </div>
-        <div class="solana-display">
-            <p>DATA HERE</p>
-        </div>
-        <div class="usd-coin-display">
-            <p>DATA HERE</p>
-        </div>
-    </div>
 
-    <div class="quick-look">
-        <p>DATA HERE</p>
+  <p id="test"></p>
+   
+  <div class="todays-encounter-container">
+
+    <div class="card" style="width: 18rem;">
+      <div class="card-header">
+        Total close encounters
+      </div>
+      
+      <ul class="list-group list-group-flush">
+        <li id="list-group-item-distance" class="today"></li>
+      </ul>
+  </div>
+
+  <div class="card-prepare" style="width: 18rem;">
+    <div class="card-header-prepare">
+      Prepare!
     </div>
+    
+    <ul class="list-group list-group-flush">
+      <li id="list-group-item-distance"><input type="Name" id="input" placeholder="YYYY-MM-DD" name="name">
+        <button onclick="submit()" type="submit">Submit</button></li>
+    </ul>
+  </div>
 
 </div>
-    
+
+<div id="inputDate">
+  <p id="ast0"></p>
+  <p id="ast1"></p>
+  <p id="ast2"></p>
+  <p id="ast3"></p>
+  <p id="ast4"></p>
+</div>
+</div>
+<script type="text/javascript" src="api2.js"></script>
 </body>
 </html>

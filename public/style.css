@@ -1,47 +1,123 @@
-.navbar{
-    display: flex;
-    justify-content: center;
+.landing{
+    height: 100vh;
+    background: url(./Assets/wp4729462-earth-4k-wallpapers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center ;
 }
 
-.main-bitcoin-display{
-    border: solid purple;
+.navbarimpact{
+    width: 100%;
+    background-color: transparent;
     text-align: center;
-    margin: 20px 0 60px 0;
-    height: 400px;
+    box-shadow: 0 0 10px rgb(252, 0, 0), 0 0 40px rgb(170, 190, 249), 0 0 80px rgb(65, 196, 252);
+    position: sticky;
+    left: 0;
+    top: 0;
 }
 
-.crypto-display{
+.navbartext{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:red;
+}
+
+.todays-encounter-container{
+    display:flex;
+    margin-top: 200px;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+
+}
+
+.card{
+    box-shadow: 0 0 10px rgb(255, 0, 0), 0 0 40px rgb(122, 0, 0);
+    width: 18rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.card-prepare{
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    border: dotted green;
-    height: 400px;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    box-shadow: 0 0 10px rgb(255, 221, 0), 0 0 40px rgb(255, 221, 0);
+
 }
 
-.ethereum-display{
-    border: solid black;
-    
-}
-.tether-display{
-    border: solid black;
-}
-.cardano-display{
-    border: solid black
-}
-.binance-coin-display{
-    border: solid black
-}
-.xrp-display{
-    border: solid black
-}
-.solana-display{
-    border: solid black
-}
-.usd-coin-display{
-    border: solid black
+.card-header{
+    padding: .5rem 1rem;
+    margin-bottom: 0;
+    background-color: rgba(255, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.125);
 }
 
-.quick-look{
-    border: solid red;
-    margin: 60px 0 0 0;
-    height: 500px;
+.card-header-prepare{
+    padding: .5rem 1rem;
+    margin-bottom: 0;
+    background-color: rgba(249, 249, 0, 0.271);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.125);
+    color:white
 }
+
+#list-group-item-distance{
+    position: relative;
+    display: block;
+    padding: .5rem 1rem;
+    color: #212529;
+    text-decoration: none;
+    border: 1px solid rgba(0,0,0,.125);
+    border-width: 0 0 1px;
+    color: white;
+}
+
+#list-group-item-distance input{
+    background-color: rgba(0,0,0,.125);
+    color: white;
+    border: 1px solid rgb(140, 122, 0);
+}
+
+#list-group-item-distance button{
+    transition: all .5s ease;
+    color: #fff;
+    border: 1px solid rgb(140, 122, 0);
+    font-size: 16px;
+    background-color : transparent;
+    outline: none;
+}
+
+#list-group-item-distance-prepare{
+    position: relative;
+    display: block;
+    padding: .5rem 1rem;
+    color: #212529;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.97);
+    border-width: 0 0 1px;
+    color: white;
+}
+
+#inputDate{
+    overflow: hidden;
+    width: 40rem;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgb(254, 254, 254), 0 0 40px rgb(255, 255, 255);
+}
+
+
+
+
+
+
