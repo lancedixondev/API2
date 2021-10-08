@@ -25,7 +25,10 @@ function display(json, date){
         document.getElementById(currentAsteroid).innerHTML += "Size(Miles): " + Math.round(json.near_earth_objects[date][x].estimated_diameter.miles.estimated_diameter_max * 1000) / 1000 + " "
         document.getElementById(currentAsteroid).innerHTML += "dangerous: " + json.near_earth_objects[date][x].is_potentially_hazardous_asteroid + " "
 
-        fetch(json.near_earth_objects[date][x].links.self)
+        let http = json.near_earth_objects[date][x].links.self;
+        let https = http.substring(0,4) + 's' + http.substring(4);
+
+        fetch(https)
         .then(response => {
             return response.json()
         })
